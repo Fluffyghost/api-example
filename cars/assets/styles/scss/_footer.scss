@@ -1,0 +1,105 @@
+footer {
+  border-top: 1px solid #E3E3E3;
+  .footWrap {
+    #menu-footer {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      li {
+        padding-right: 53px;
+        a {
+          color: $text;
+          transition: 0.2s ease-out;
+          &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+          }
+        }
+        &:last-child { padding-right: 0px; }
+      }
+    }
+    .menu .active>a, .menu .is-active>a {
+      background: $none;
+      border-bottom: 2px solid $primary-color;
+      width: fit-content;
+      padding: .7rem 0px;
+      // margin: auto;
+    }
+  }
+}
+
+
+.creditBar {
+  padding-bottom: 40px;
+  .credCol {
+    text-align: center;
+    .social {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      li {
+        padding-right: 40px;
+        a {
+          color: $text;
+          i {
+            font-size: 20px;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+        &:last-child { padding-right: 0px; }
+      }
+    }
+    .text {
+      transition: 0.2s ease-out;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+@include breakpoint(medium down) {
+  footer {
+    padding: 20px 0px;
+    .footWrap {
+      #menu-footer {
+        li {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+  .creditBar {
+    .credCol {
+      .social { margin-bottom: 10px; }
+      .text {
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  footer {
+    padding-bottom: 40px !important;
+    .footWrap {
+      #menu-footer {
+        display: block;
+        li {
+          padding-right: 0px;
+          a { padding-left: 0px; }
+        }
+      }
+    }
+  }
+  .creditBar {
+    .credCol {
+      text-align: left;
+      .social {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

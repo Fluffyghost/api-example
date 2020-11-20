@@ -1,0 +1,267 @@
+#ct-container * {
+  input {
+    border: 1px solid #D6D6D6;
+    border-radius: 0.3rem;
+    height: 53px;
+    padding: 15px;
+    color: $black !important;
+    font-weight: 400 !important;
+    &::placeholder {
+      color: #A4A4A6;
+      font-size: 16px;
+      font-weight: 400 !important;
+    }
+    &:focus {
+      box-shadow: 0px !important;
+      border: 1px solid $black !important;
+    }
+  }
+}
+
+.ct-recent-searches--list-step1 {
+  border-radius: 4px;
+}
+
+#veetoo #ct-container input:not([disabled]):not(.ctc-form__control):not([tabindex='-1']):focus {
+  box-shadow: none !important;
+}
+#ct-container input:not([disabled]):not(.ctc-form__control):not([tabindex='-1']):focus {
+  box-shadow: none !important;
+}
+
+
+#ct-container ul:not(.cto-list), #ct-container ol, .ct-modal-container ul:not(.cto-list), .ct-modal-container ol {
+  margin-bottom: 0px !important;
+}
+
+div#ct-pickup-calendar>div>div>div>input:focus {
+  border: 1px solid red; 
+}
+.ct-form-field { margin-bottom: 0px !important; }
+#ct-pickup-timers, #ct-return-timers {
+  position: relative;
+  margin-top: -24px;
+  &::before {
+    content: "Add time";
+    margin-top: -5px;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    top: -8px;
+  }
+}
+.ct-timepicker-custom {
+  ct-icon.notranslate {
+    top: -15px;
+    position: relative;
+  }
+}
+
+.ctc-icon--clock {
+  top: 20px !important;
+  position: relative;
+}
+.ct-form[ct-search-cars-form] label {
+  margin-bottom: 10px;
+}
+#ct-checkbox { margin-top: 10px !important; }
+svg.ctc-icon.ctc-icon--cancel {
+  display: none !important;
+}
+.ct-form-field input {
+  color: #A4A4A6 !important;
+  font-size: 16px !important;
+}
+.ct-grid { padding: 0px; background: $white; }
+
+h2.ct-text-left.ct-font-weight-600, svg.ctc-icon.ctc-icon--compass.ctc-icon-before, svg.ctc-icon.ctc-icon--calendar.ctc-icon-before {
+  display: none !important;
+}
+input#pickupLocation, input#pickupDate, input#returnDate, input#returnLocation {
+  padding-left: 15px !important;
+  &:visited, &:focus {
+    box-shadow: 0px !important;
+    border: 1px solid $black !important;
+  }
+}
+input#returnLocation {
+  margin-bottom: 20px;
+}
+#ct-pickup-select label strong {
+  font-size: 0px;
+  // margin-bottom: 10px;
+  &:before {
+    content: "Pickup location";
+    font-size: 16px;
+  }
+}
+svg.ctc-icon.ctc-icon--cancel {
+  font-size: 16px;
+  top: 6px;
+}
+#ct-container strong {
+  font-size: 16px;
+  color: $text;
+}
+.ct-style-encapsulator .ctc-form__group--checkbox label::before {
+  border-radius: 0.2rem !important;
+  border: 2px solid #D6D6D6 !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+.ctc-form__group--checkbox input[type="checkbox"]:checked+label::before {
+  background: #D6D6D6 !important;
+}
+.ct-style-encapsulator .ctc-form__group--radio input[type="checkbox"]:checked+label::after, .ct-style-encapsulator .ctc-form__group--checkbox input[type="checkbox"]:checked+label::after {
+  left: 4px;
+  top: 7px;
+  font-size: 16px;
+}
+#ct-container .ct-search-form #ct-checkbox span, #ct-container .ct-search-form #ct-age-checkbox span, .ct-modal-container .ct-search-form #ct-checkbox span, .ct-modal-container .ct-search-form #ct-age-checkbox span {
+  position: relative;
+  left: -2px;
+  top: 2px;
+}
+.ct-calendar__mask {
+  background: $none !important;
+}
+#ct-container .ct-datepicker .ct-datepicker-header .ct-name, .ct-modal-container .ct-datepicker .ct-datepicker-header .ct-name, .ct-datepicker .ct-datepicker-header .ctc-icon {
+  color: $white !important;
+}
+#ct-container .ct-datepicker .ct-datepicker-header, p.ct-name, button.ct-btn-calendar {
+  background: $primary-color !important;
+}
+#ct-container .ct-search-form #ct-pickup-calendar, #ct-container .ct-search-form #ct-return-calendar {
+  width: 58% !important;
+  margin-right: 4%;
+}
+#ct-return-date {
+  margin-top: 30px;
+}
+#searchCarsFormBtn-searchcars {
+  margin-top: 30px !important;
+  height: 66px !important;
+  box-shadow: none !important;
+  transition: 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: rgba(255, 67, 74, 0.7) !important;
+  }
+  &:before {
+    font-family: 'Material Icons';
+    content: "search";
+    margin-right: 4px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+
+//Error messages
+
+#ct-container [class|="ct-banner"] svg {
+  top: 10px;
+}
+#ct-container [class|="ct-banner"].ct-banner-red {
+  background-color: $secondary-color !important;
+  border: 0px;
+  border-radius: 0.3rem;
+}
+#ct-container .ct-search-form .ct-grid.ct-search-form__top-block .ct-banner-red p { font-weight: 700; }
+
+
+/* Booking Page */
+
+.ct-availability-filters-collapsible .ctc-form__group--checkbox label::before {
+  border-radius: 0.2rem !important;
+  border: 2px solid #D6D6D6 !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Manage Booking Page */
+
+.manageBooking {
+  background: $white;
+  .formWrap {
+    background: $primary-color;
+    border-radius: 0.3em;
+    padding: 30px;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    // align-items: center;
+    margin: 100px auto 0px auto;
+    input {
+      border-radius: 0.3em;
+      box-shadow: none !important;
+      background-image: none !important;
+      width: 100%;
+      border: 1px solid #D6D6D6;
+      margin: 15px 0px 25px 0px;
+      padding: 15px;
+      height: 53px;
+    }
+    .whiteB {
+      width: 100%;
+      margin-top: 20px;
+    }
+    span {
+      position: relative;
+      top: -20px;
+    }
+  }
+}
+.ct-modal-dialog svg.ctc-icon.ctc-icon--cancel {
+  top: 0px;
+}
+.ct-slide-panel__content {
+  margin-top: 30px !important;
+}
+
+/* Mobile Form */
+
+.ct-input-modal--content__header {
+  padding-top: 120px;
+}
+
+@include breakpoint(medium down) {
+  .carBookingForm {
+    display: flex;
+    align-items: center;
+    .formCols .whiteBox {
+      padding: 20px;
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  #ct-container .ct-search-form #ct-pickup-calendar, #ct-container .ct-search-form #ct-return-calendar,
+  #ct-container .ct-search-form #ct-pickup-timers, #ct-container .ct-search-form #ct-return-timers {
+    width: 100% !important;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+  svg.ctc-icon.ctc-icon--cancel {
+    top: 0px;
+  }
+  .ct-main-header { box-shadow: none !important; }
+  .ct-grid.ctc-form__group--nomarginbot input {
+    padding: 10px 0px 0px 50px !important;
+    margin-bottom: 20px;
+  }
+  input#search-cars-pickup-location-input {
+    padding-left: 10px !important;
+    padding-top: 19px !important;
+  }
+  svg.ctc-icon.ctc-icon--clock {
+    position: relative;
+    top: 2px !important;
+  }
+  .ct-grid.ctc-form__group--nomarginbot input {
+    padding-top: 15px !important;
+  }
+}

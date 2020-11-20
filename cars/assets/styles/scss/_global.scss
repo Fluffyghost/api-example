@@ -1,0 +1,202 @@
+body { margin: 0px; color: $text; }
+.content { padding-top: 95px; }
+
+#cookie-bar {
+  position: fixed;
+  bottom: 0;
+  background: $secondary-color;
+  width: 100%;
+  z-index: 100;
+  .underline {
+    text-decoration: underline !important;
+  }
+}
+
+h1, .h1 { font-size: 35px; font-weight: 700; color: $title; }
+h2, .h2 { font-size: 32px; font-weight: 700; color: $title; }
+h3, .h3 { font-size: 24px; font-weight: 700; color: $title; }
+h4, .h4 { font-size: 18px; font-weight: 700; color: $title; }
+h5, .h5 { font-size: 16px; font-weight: 700; color: $title; }
+
+a, button { cursor: pointer; outline: none; }
+a:hover {color: inherit;}
+p { font-size: 16px; line-height: 28px; }
+.tiny { font-size: 14px; }
+.largep { font-size: 18px; }
+ul {
+  margin: 0px;
+  li {
+    list-style: none;
+  }
+}
+
+.bold { font-weight: 700; }
+.underline { text-decoration: underline; }
+.rel { position: relative; }
+.center { text-align: center; }
+.alCen { margin: auto; }
+.midW { max-width: 785px; margin: auto; }
+.excerpt-read-more { display: none; }
+
+
+//Colours
+.white { color: $white; }
+.black { color: $black; }
+.blue { color: $secondary-color; }
+.shadow { box-shadow: 0px 1px 10px rgba(0,0,0,0.1); }
+.blackBg { background-color: $black; }
+.pinkBg { background-color: $primary-color; }
+.whiteBg { background-color:  $white; }
+.greyBg { background-color: #FAFAFA; }
+.text { color: #2F2F2F; }
+
+.showmed{ display: none; }
+
+//Buttons
+.iconBut {
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  i { margin-right: 5px; font-size: 20px; }
+  &:hover {
+    // color: #416dc8;
+  }
+}
+.pinkB {
+	background: $primary-color;
+	color: $white;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $primary-color;
+	transition: 0.2s ease-out;
+	font-size: 16px;
+  border-color: $primary-color;
+  width: fit-content;
+  border-radius: 0.3em;
+	&:hover {
+		background-color: rgba(255, 67, 74, 0.7);
+    color: $white;
+	}
+}
+.whiteB {
+	background: $white;
+	color: $primary-color;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $white;
+	transition: 0.2s ease-out;
+	font-size: 16px;
+  height: 57px;
+  width: fit-content;
+  border-radius: 0.3em;
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.7);
+    color: $primary-color;
+	}
+}
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.wpcf7-form {
+  select, [type=text], [type=email], [type=tel], textarea {
+    border-radius: 0.3em;
+    box-shadow: none !important;
+    background-image: none !important;
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    margin: 15px 0px 25px 0px;
+    padding: 15px;
+  }
+  select, [type=text], [type=email], [type=tel] {
+    height: 53px;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../../assets/images/icons/selectarrow.svg') !important;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 97% 62%;
+  }
+  textarea { height: 130px; }
+  label { margin-bottom: 15px; }
+  .terms { font-size: 14px; color: #747474; margin-bottom: 40px; }
+  .pinkB { width: 100%; }
+  .wpcf7-not-valid-tip {
+    position: relative;
+    top: -24px;
+    font-size: 14px;
+  }
+}
+
+//Margins
+.noMar { margin: 0px; }
+.marL30 { margin-left: 30px; }
+.mar30 { margin: 30px 0px; }
+.mar50 { margin: 50px 0px; }
+.mar80 { margin: 80px 0px; }
+.mar100 { margin: 100px 0px; }
+.marB20 { margin-bottom: 20px; }
+.marB25 { margin-bottom: 25px; }
+.marB30 { margin-bottom: 30px; }
+.marB40 { margin-bottom: 40px; }
+.marB50 { margin-bottom: 50px; }
+.marB60 { margin-bottom: 60px; }
+.marB70 { margin-bottom: 70px; }
+.marB80 { margin-bottom: 80px; }
+.marB90 { margin-bottom: 90px; }
+.marB100 { margin-bottom: 100px; }
+.marB120 { margin-bottom: 120px; }
+.marT20 { margin-top: 20px; }
+.marT25 { margin-top: 25px; }
+.marT30 { margin-top: 30px; }
+.marT40 { margin-top: 40px; }
+.marT50 { margin-top: 50px; }
+.marT60 { margin-top: 60px; }
+.marT100 { margin-top: 100px; }
+.marT120 { margin-top: 120px; }
+
+//Padding
+.pad25 { padding: 25px 0px; }
+.pad70 { padding: 70px 0px; }
+.pad50 { padding: 50px; }
+.pad80 { padding: 80px 0px; }
+.pad100 { padding: 100px 0px; }
+.padT20 { padding-top: 20px; }
+.padT30 { padding-top: 30px; }
+.padT40 { padding-top: 40px; }
+.padT60 { padding-top: 60px; }
+.padT100 { padding-top: 100px; }
+.padB60 { padding-bottom: 60px; }
+.padB100 { padding-bottom: 100px; }
+.pad90W { padding: 0px 90px; }
+.padL40 { padding-left: 40px; }
+.padR40 { padding-right: 40px; }
+
+
+@include breakpoint(medium down) {
+  h1, .h1 { font-size: 30px; }
+  h2, .h2 { font-size: 26px; }
+  h3, .h3 { font-size: 20px; }
+  h4, .h4 { font-size: 18px; }
+  h5, .h5 { font-size: 16px; }
+  .grid-container { padding: 0px 20px; }
+  .showmed { display: block; }
+  .hidemed { display: none; }
+  .pad100 { padding: 80px 0px; }
+  .marB120 { margin-bottom: 80px; }
+  .marT120 { margin-top: 80px; }
+}

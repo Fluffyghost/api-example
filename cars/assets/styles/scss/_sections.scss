@@ -1,0 +1,160 @@
+.carBookingForm {
+  // overflow: hidden;
+  // height: 780px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  .bannerOverlay {
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .formCols {
+    z-index: 10;
+    // height: 780px;
+    padding: 35px 0px 75px 0px;
+    position: relative;
+    .whiteBox {
+      background: $white;
+      padding: 50px 40px;
+      max-width: 470px;
+      border-radius: 4px;
+      h1 {
+        font-size: 32px;
+      }
+    }
+    .textBox {
+      padding-left: 120px;
+      li {
+        display: flex;
+        // align-items: center;
+        color: $white;
+        font-size: 22px;
+        &:before {
+          font-family: 'Material Icons';
+          content: 'check_circle';
+          color: $success-color;
+          font-size: 26px;
+          margin-right: 11px;
+        }
+      }
+    }
+    #destination-form {
+      h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .formHome {
+    padding: 75px 0px !important;
+  }
+  .formColsnoH {
+    height: auto !important;
+  }
+}
+.twoCols {
+  .intro {
+    max-width: 480px;
+  }
+  .phone, .email {
+    display: flex;
+    align-items: center;
+    .material-icons {
+      color: $secondary-color;
+      margin-right: 10px;
+      font-size: 28px;
+    }
+  }
+}
+.pageBanner {
+  overflow: hidden;
+  height: 500px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  .bannerOverlay {
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .bannerWrap {
+    z-index: 10;
+    // height: 500px;
+    height: 350px;
+    position: relative;
+    .textBox {
+      padding: 0px 150px;
+    }
+
+  }
+}
+
+.firstTextCol, .secondTextCol, .thirdTextCol {
+  .imgCol {
+    img {
+      width: 100%;
+    }
+  }
+}
+@include breakpoint(medium down) {
+  .carBookingForm {
+    height: auto;
+    .formCols {
+      height: auto;
+      .whiteBox {
+        max-width: none;
+      }
+      .textBox {
+        padding: 20px 30px 0px 30px;
+      }
+    }
+    .formMedWidth { width: 100%;  padding: 30px 0px 60px 0px; }
+  }
+  .twoCols {
+    .contactForm {
+      margin-top: 40px;
+    }
+  }
+  .pageBanner .bannerWrap .textBox {
+    padding: 0px;
+  }
+  .secondTextCol {
+    display: flex;
+    .imgCol {
+      order: 2;
+    }
+    .textCol {
+      order: 1;
+    }
+  }
+  .firstTextCol, .secondTextCol, .thirdTextCol {
+    .imgCol {
+      padding: 0px !important;
+      img {
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+  .firstTextCol .marB120 { margin-bottom: 0px; }
+  .breadWrap {
+    padding-left: 30px;
+    margin-top: 0px;
+  }
+}
+@include breakpoint(small only) {
+  .carBookingForm {
+    height: auto;
+    .formCols .textBox {
+      padding: 60px 30px 0px 30px;
+    }
+  }
+  .formMedWidth { padding: 60px 0px; }
+}
